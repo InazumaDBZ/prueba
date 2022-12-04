@@ -189,3 +189,96 @@ header .action .searchBx input{
     box-shadow: 0 0 10px aqua;
 }
 
+#about .contentBx img{
+    width: 30px;
+    height: auto;
+}
+
+/*Parte Responsive*/
+
+@media(max-width: 1075px){
+    header{
+        padding: 15px 40px;
+    }
+
+    header .nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #663d66;;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    header .nav.active{
+        display: flex;
+    }
+
+    header .nav li{
+        margin: 20px 0;
+    }
+
+    header .nav li a{
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    .toggleMenu{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url("icons8-menu-50.png");
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 1001;
+        transition: 0.4s;
+    }
+
+    .toggleMenu:hover{
+        background-color: #663d66;
+        border: none;
+        color: black;
+        box-shadow: 0 0 30px aqua;
+    }
+
+    .toggleMenu.active{
+        background: url("icons8-close-50_1.png");
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+    }
+
+    .toggleMenu.active:hover{
+        background-color: #663d66;
+        border: none;
+        color: black;
+        box-shadow: 0 0 30px aqua;
+    }
+
+    #home .banerhome img
+    {
+        position: absolute;
+    }
+
+    #home .banerhome .content
+    {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(27 33 65 / 50%);
+        padding: 20px;
+        z-index: 1;
+        border-radius: 10px;
+    }
+
+    #about{flex-direction: column;}
+
+    #about .contentBx{width: 100%;}
+}
+

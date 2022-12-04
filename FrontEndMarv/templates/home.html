@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static\estilo.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>UnsirifaGames</title>
 </head>
 <body>
@@ -22,10 +23,11 @@
             </ul>
             <div class="action">
                 <div class="searchBx">
-                    <a href="#"></a>
+                    <a href="#"><i class='bx bx-search-alt'></i></a>
                     <input type="text" placeholder="Buscar juego">
                 </div>
             </div>
+            <div class="toggleMenu" onclick="toggleMenu()"></div>
         </header>
 
         <section id="home">
@@ -51,8 +53,16 @@
             </div>
             <img src="static\unsiri.png">
         </section>
-
-
     </div>
+    <script>
+        /*Responsive navbar*/
+        function toggleMenu()
+        {
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const nav = document.querySelector('.nav');
+            toggleMenu.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+    </script>
 </body>
 </html>
