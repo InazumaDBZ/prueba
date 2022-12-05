@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+    <link rel="stylesheet" href="/static/script.js">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oxanium:wght@800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <a href="." class="logo">Unsirifa<span>Games</span></a>
+        <ul class="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/accion">Acción</a></li>
+            <li><a href="#">Clásicos</a></li>
+            <li><a href="#">Mesa</a></li>
+            <li><a href="#">Aventura</a></li>
+        </ul>
+
+        <div class="action">
+            <div class="searchBx">
+                <a href="#">
+                    <i class="bx bx-search"></i>
+                </a>
+                <input type="text" placeholder="Buscar juegos...">
+            </div>
+        </div>
+
+        <div class="toggle">
+
+        </div>
+    </header>
+    {% block main %}{% endblock %}
+</html>
