@@ -14,6 +14,71 @@ def accion():
 def dbz():
     return render_template("juegos.html")
 
+#Inicio De Juegos De Accion
+
+@app.route("/accion/spiderdoll")
+def spiderdoll():
+    return render_template("accion/spiderdoll.html")
+
+
+@app.route("/accion/sandbox-city")
+def sandbox_city():
+    return render_template("accion/sandbox-city---cars-zombies-ragdolls.html")
+
+@app.route("/accion/amazing-vice-spider")
+def amazing_vice_spider():
+    return render_template("accion/amazing-strange-rope-police.html")
+
+@app.route("/accion/armed-with-wings-2")
+def armed_wings2():
+    return render_template("accion/armed-with-wings2.html")
+
+@app.route("/accion/infeccion-z")
+def infectionZ():
+    return render_template("accion/infectionZ.html")
+
+@app.route("/accion/time-shooter2")
+def time_shooter2():
+    return render_template("accion/time-shooter2.html")
+
+@app.route("/accion/fields-of-fury")
+def fields_fury():
+    return render_template("accion/fields-of-fury.html")
+
+@app.route("/accion/air-wars3")
+def air_wars():
+    return render_template("accion/air-wars3.html")
+
+@app.route("/accion/hobo")
+def hobo():
+    return render_template("accion/hobo.html")
+
+@app.route("/accion/ghost-walker")
+def ghost_walker():
+    return render_template("accion/ghost-walker.html")
+
+@app.route("/accion/hero-battle---fantasy-arena")
+def hero_battle():
+    return render_template("accion/hero-battle-FA.html")
+
+@app.route("/accion/smash-karts")
+def smash_kart():
+    return render_template("accion/smash-karts.html")
+
+@app.route("/accion/dead-shot")
+def dead_shot():
+    return render_template("accion/dead-shot.html")
+
+@app.route("/accion/shotgun-highway")
+def shotgun_highway():
+    return render_template("accion/shotgun-highway.html")
+
+@app.route("/accion/bullet-force")
+def bullet_force():
+    return render_template("accion/bullet-force.html")
+
+#fin de juegos de accion
+
 @app.route("/casuales")
 def casuales():
     return render_template("casuales.html")
