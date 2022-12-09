@@ -1,24 +1,19 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
-    <link rel="stylesheet" href="proyecto_pendejo/static/script.js">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oxanium:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oxanium:wght@800&display=swap"
+        rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
 </head>
+
 <body>
     <header>
         <a href="." class="logo">Unsirifa<span>Games</span></a>
-        <ul class="nav">
-            <li><a href="/">Home</a></li>
-            <li><a href="/accion">Acción</a></li>
-            <li><a href="#">Clásicos</a></li>
-            <li><a href="#">Mesa</a></li>
-            <li><a href="#">Aventura</a></li>
-        </ul>
 
         <div class="action">
             <div class="searchBx">
@@ -29,26 +24,125 @@
             </div>
         </div>
 
-        <a href="#" class="btn-open" id="btn-open"><i class='bx bxs-user-circle'></i></a>
+        <ul class="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/accion">Acción</a></li>
+            <li><a href="#">Clásicos</a></li>
+            <li><a href="#">Mesa</a></li>
+            <li><a href="#">Aventura</a></li>
+            <li>
+                <div class="login-btn">
+                    <a href="#" class="btn-abrir-sidemenu"><i class="bx bxs-user-circle"></i></a>
+                </div>
+            </li>
+        </ul>
 
-        <div class="toggle" onclick="toggleMenu();"></div>
+        <div class="sidebar-menu" id="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="icon"><i class='bx bxs-user-circle'></i></span>
+                        <span class="title">Perfil</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <form action="/logout" method="post">
+                    <a href="#" id="btn-abrir-popup" class="btn-abrir-popup">
+                        <span class="icon"><i class='bx bxs-user-account'></i></span>
+                        <span class="title">Iniciar sesión</span>
+                    </a>
+                </form>
+                </li>
+
+                <li>
+                    <a href="">
+                        <span class="icon"><i class='bx bxs-cog'></i></span>
+                        <span class="title">Configuración</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <span class="icon"><i class='bx bx-log-out'></i></span>
+                        <span class="title">Cerrar sesión</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="toggle"><i class='bx bx-x'></i></div>
+        </div>
+
+
+        <div class="toggleMenu" onclick="toggleMenu()"></div>
     </header>
 
+    <!-- ventana emergente - login/register -->
     <div class="overlay" id="overlay">
         <div class="popup" id="popup">
-            <a href="#" id="btn-close" class="btn-close"><i class='bx bx-x'></i></a>
-            <h3>SUSCRIBETE</h3>
-            <h4>y recibe un cupon de descuento.</h4>
-            <form action="">
-                <div class="contenedor-inputs">
-                    <input type="text" placeholder="Nombre">
-                    <input type="email" placeholder="Correo">
+            <div class="container">
+                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class='bx bx-x'></i></a>
+                <input type="checkbox" id="flip">
+                <div class="cover">
+                    <div class="front">
+                        <img src="static/images/front.png">
+                    </div>
                 </div>
-                <input type="submit" class="btn-submit" value="Suscribirse">
-            </form>
+                <div class="forms">
+                    <div class="form-content">
+                        <div class="login-form">
+                            <div class="title">Iniciar sesión</div>
+                            <form action="/login" method="post">
+                                <div class="input-boxes">
+                                    <div class="input-box">
+                                        <i class='bx bxs-user'></i>
+                                        <input type="text" placeholder="Nombre de usuario" name="user-login" required>
+                                    </div>
+                                    <div class="input-box">
+                                        <i class='bx bxs-lock-alt'></i>
+                                        <input type="password" placeholder="Contraseña" name="password-login" required>
+                                    </div>
+                                    <div class="text"><a href="#">¿Olvidaste tu contraseña?</a></div>
+                                    <div class="button input-box">
+                                        <input type="submit" value="Entrar">
+                                    </div>
+                                    <div class="text sign-up-text">¿Aún no tienes una cuenta? <label
+                                            for="flip">Regístrate
+                                            aquí</label></div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="signup-form">
+                            <div class="title">Registrarse</div>
+                            <form action="/register" method="post">
+                                <div class="input-boxes">
+                                    <div class="input-box">
+                                        <i class='bx bxs-user'></i>
+                                        <input type="text" placeholder="Nombre de usuario" name="user-register"
+                                            required>
+                                    </div>
+                                    <div class="input-box">
+                                        <i class='bx bxs-envelope'></i>
+                                        <input type="text" placeholder="Correo electrónico" name="email" required>
+                                    </div>
+                                    <div class="input-box">
+                                        <i class='bx bxs-lock-alt'></i>
+                                        <input type="password" placeholder="Contraseña" name="password-register"
+                                            required>
+                                    </div>
+                                    <div class="button input-box">
+                                        <input type="submit" value="Continuar">
+                                    </div>
+                                    <div class="text sign-up-text">¿Ya tienes una cuenta? <label for="flip">Inicia
+                                            sesión</label></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
     {% block main %}{% endblock %}
     <footer>
         <div class="info">
@@ -61,4 +155,6 @@
             </ul>
         </div>
     </footer>
+    <script src="static/script.js"></script>
+
 </html>
