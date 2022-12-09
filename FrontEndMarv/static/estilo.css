@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', serif;
+}
+
+body{
+    /*background-color: #050e2d;*/
+    background-color: #1e2337;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #663d66;
+    transition: 0.5s;
+    z-index: 1000;
+
+}
+
+header .logo{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin: 10px;
+}
+
+header ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header ul li a:hover{
+    background-color: aqua;
+    color: black;
+    box-shadow: 0 0 10px aqua;
+}
+
+header .action .searchBx{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+}
+
+header .action .searchBx i{
+    font-size: 1.4em;
+    margin: 5px;
+    color: black;
+}
+
+header .action .searchBx input{
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: black;
+}
+
+/*Baner*/
+#home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .banerhome{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .banerhome .content{
+   width: 50%;
+   height: 100%;
+}
+
+#home .banerhome .content h2{
+    font-size: 4em;
+    color: white;
+    letter-spacing: 1px;
+}
+
+#home .banerhome .content p{
+    font-size: 1em;
+    color: white;
+    letter-spacing: 1px;
+}
+
+#home .banerhome .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid aqua;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+
+}
+
+#home .banerhome .content a:hover{
+    background-color: aqua;
+    border: none;
+    color: black;
+    box-shadow: 0 0 10px aqua;
+}
+
+#home .banerhome img{
+    width: 600px;
+}
+
+/*About*/
+
+#about{
+    position: relative;
+    width: 100%;
+    min-height: 75vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about .contentBx{
+    width: 50%;
+    margin: 20px;
+}
+
+#about .contentBx h2{
+    font-size: 3em;
+    font-weight: 700;
+    color: white;
+}
+
+#about .contentBx p{
+    max-width: 600px;
+    text-align: justify;
+    color: white;
+}
+
+#about .contentBx a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid aqua;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+#about .contentBx a:hover{
+    background-color: aqua;
+    border: none;
+    color: black;
+    box-shadow: 0 0 10px aqua;
+}
+
+#about .contentBx img{
+    width: 30px;
+    height: auto;
+}
+
+/*Parte Responsive*/
+
+@media(max-width: 1075px){
+    header{
+        padding: 15px 40px;
+    }
+
+    header .nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #663d66;;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    header .nav.active{
+        display: flex;
+    }
+
+    header .nav li{
+        margin: 20px 0;
+    }
+
+    header .nav li a{
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    .toggleMenu{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url("icons8-menu-50.png");
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 1001;
+        transition: 0.4s;
+    }
+
+    .toggleMenu:hover{
+        background-color: #663d66;
+        border: none;
+        color: black;
+        box-shadow: 0 0 30px aqua;
+    }
+
+    .toggleMenu.active{
+        background: url("icons8-close-50_1.png");
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+    }
+
+    .toggleMenu.active:hover{
+        background-color: #663d66;
+        border: none;
+        color: black;
+        box-shadow: 0 0 30px aqua;
+    }
+
+    #home .banerhome img
+    {
+        position: absolute;
+    }
+
+    #home .banerhome .content
+    {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(27 33 65 / 50%);
+        padding: 20px;
+        z-index: 1;
+        border-radius: 10px;
+    }
+
+    #about{flex-direction: column;}
+
+    #about .contentBx{width: 100%;}
+}
+

@@ -1,16 +1,28 @@
+<<<<<<< HEAD
 * {
+=======
+*{
+>>>>>>> master
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Oxanium', cursive;
 }
 
+<<<<<<< HEAD
 body {
+=======
+body{
+>>>>>>> master
     background: #1d191f;
 }
 
 /* navbar */
+<<<<<<< HEAD
 header {
+=======
+header{
+>>>>>>> master
     position: fixed;
     top: 0;
     left: 0;
@@ -22,10 +34,16 @@ header {
     background: #242533;
     transition: 0.5s;
     z-index: 3;
+<<<<<<< HEAD
     box-shadow: 0 0 10px black;
 }
 
 header .logo {
+=======
+}
+
+header .logo{
+>>>>>>> master
     position: relative;
     color: #fff;
     text-decoration: none;
@@ -35,18 +53,30 @@ header .logo {
     text-shadow: black 0px 3px 8px;
 }
 
+<<<<<<< HEAD
 header .nav {
+=======
+header .nav{
+>>>>>>> master
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+<<<<<<< HEAD
 header ul li {
+=======
+header ul li{
+>>>>>>> master
     list-style: none;
     margin: 10px;
 }
 
+<<<<<<< HEAD
 header ul li a {
+=======
+header ul li a{
+>>>>>>> master
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
@@ -55,16 +85,25 @@ header ul li a {
     font-size: 14px;
 }
 
+<<<<<<< HEAD
 header .logo span {
     color: hsl(42, 99%, 46%);
 }
 
 header ul li a:hover:not(header .nav li .login-btn a) {
+=======
+header .logo span{
+    color: hsl(42, 99%, 46%);
+}
+
+header ul li a:hover{
+>>>>>>> master
     background: hsla(42, 99%, 46%, 0.75);
     color: #242533;
     box-shadow: 0 0 10px hsla(42, 99%, 46%, 0.75);
 }
 
+<<<<<<< HEAD
 header .action .searchBx {
     padding: 5px;
     margin: 0 10px;
@@ -87,31 +126,72 @@ header .action .searchBx input {
 }
 
 header .nav .login-btn {
+=======
+header .action .searchBx{
+    padding: 5px;
+    margin: 5px;
+>>>>>>> master
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
 }
 
+<<<<<<< HEAD
 header .nav .login-btn a {
     text-decoration: none;
 }
 
 header .nav .login-btn a i {
     font-size: 1.8em;
+=======
+header .action .searchBx a i{
+    font-size: 1.4em;
+    margin: 5px;
+    color: #EAA221;
+}
+
+header .action .searchBx input{
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: black;
+}
+
+header .login .login-btn{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+header .login .login-btn a i{
+    font-size: 1.9em;
+>>>>>>> master
     margin: 5px;
     color: #EAA221;
     border-radius: 50%;
 }
 
+<<<<<<< HEAD
 header .nav .login-btn a i:hover {
+=======
+header .login .login-btn a i:hover{
+>>>>>>> master
     background: hsla(42, 99%, 46%, 0.75);
     color: #242533;
     box-shadow: 0 0 10px hsla(42, 99%, 46%, 0.75);
 }
 
+<<<<<<< HEAD
 .banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/bg.png);
+=======
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/bg.png);
+>>>>>>> master
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -123,7 +203,11 @@ header .nav .login-btn a i:hover {
 }
 
 
+<<<<<<< HEAD
 .banner .bg {
+=======
+.banner .bg{
+>>>>>>> master
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -132,12 +216,20 @@ header .nav .login-btn a i:hover {
     align-items: center;
 }
 
+<<<<<<< HEAD
 .banner .bg .content {
+=======
+.banner .bg .content{
+>>>>>>> master
     width: 50%;
     height: 100%
 }
 
+<<<<<<< HEAD
 .banner .bg .content h2 {
+=======
+.banner .bg .content h2{
+>>>>>>> master
     font-size: 4em;
     color: #fff;
     letter-spacing: 1px;
@@ -147,6 +239,7 @@ header .nav .login-btn a i:hover {
 }
 
 @keyframes text {
+<<<<<<< HEAD
     50% {
         text-shadow: 10px 20px 30px #EAA221;
     }
@@ -154,11 +247,22 @@ header .nav .login-btn a i:hover {
 
 .banner .bg .content p {
     font-size: 1.3em;
+=======
+    50% {text-shadow: 10px 20px 30px blue;}
+}
+
+.banner .bg .content p{
+    font-size: 1em;
+>>>>>>> master
     color: #dbd9d9;
     letter-spacing: 1px;
 }
 
+<<<<<<< HEAD
 .banner .bg .content a {
+=======
+.banner .bg .content a{
+>>>>>>> master
     display: inline-block;
     padding: 10px 20px;
     margin: 20px 0;
@@ -173,6 +277,7 @@ header .nav .login-btn a i:hover {
     box-shadow: 0px 0px 20px 5px #EAA221;
 }
 
+<<<<<<< HEAD
 .banner .bg .content a:hover {
     box-shadow: 0px 0px 20px 5px rgb(248, 244, 0);
 }
@@ -186,27 +291,54 @@ header .nav .login-btn a i:hover {
     position: relative;
     width: 100%;
     min-height: 80vh;
+=======
+.banner .bg .content a:hover{
+    box-shadow: 0px 0px 20px 5px rgb(248, 244, 0);
+}
+
+.banner .bg img{
+    width: 600px;
+
+}
+
+.about{
+    position: relative;
+    width: 100%;
+    min-height: 75hv;
+>>>>>>> master
     padding: 0px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
     background: #242533;
     box-shadow: 0 0 10px black;
 }
 
 .about .container-info {
+=======
+}
+
+.about .container-info{
+>>>>>>> master
     width: 50%;
     margin: 20px;
 }
 
+<<<<<<< HEAD
 .about .container-info h2 {
     font-size: 4em;
+=======
+.about .container-info h2{
+    font-size: 3em;
+>>>>>>> master
     font-weight: 700;
     color: white;
     text-transform: uppercase;
     text-shadow: black 0px 3px 8px;
 }
 
+<<<<<<< HEAD
 .about img{
     top: 20px;
     left: 20px;
@@ -216,10 +348,15 @@ header .nav .login-btn a i:hover {
 .about .container-info p {
     max-width: 800px;
     font-size: 1.3em;
+=======
+.about .container-info p{
+    max-width: 600px;
+>>>>>>> master
     text-align: justify;
     color: white;
 }
 
+<<<<<<< HEAD
 .about .container-info h2 span {
     color: hsl(42, 99%, 46%);
 }
@@ -229,23 +366,47 @@ header .nav .login-btn a i:hover {
 }
 
 ::-webkit-scrollbar-thumb {
+=======
+.about .container-info h2 span{
+    color: hsl(42, 99%, 46%);
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+>>>>>>> master
     background: #EAA221;
     border-radius: 6px;
 }
 
+<<<<<<< HEAD
 .container-cards {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/accion-bg.png);
+=======
+.container-cards{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/accion-bg.png);
+>>>>>>> master
     background-position: center;
     background-size: cover;
     position: relative;
     z-index: 2;
     width: 100%;
+<<<<<<< HEAD
     min-height: 120vh;
     padding: 0px 100px;
     box-shadow: 0 0 10px black;
 }
 
 .container-cards {
+=======
+    min-height: 100vh;
+    padding: 0px 100px;
+}
+
+.container-cards{
+>>>>>>> master
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,17 +414,30 @@ header .nav .login-btn a i:hover {
     padding: 170px;
 }
 
+<<<<<<< HEAD
 .container-cards td {
     padding: 0px 15px 35px;
 }
 
 .container-cards img {
+=======
+.container-cards td{
+    padding: 0px 15px 35px;
+}
+
+.container-cards img{
+>>>>>>> master
     width: 155px;
     height: 160px;
 }
 
+<<<<<<< HEAD
 .games {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/card-bg.png);
+=======
+.games{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/card-bg.png);
+>>>>>>> master
     background-position: center;
     background-size: cover;
     position: relative;
@@ -275,9 +449,16 @@ header .nav .login-btn a i:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+<<<<<<< HEAD
 }
 
 .games h2 {
+=======
+    margin: 40px auto;
+}
+
+.games h2{
+>>>>>>> master
     color: white;
     margin: 10px 0;
     font-size: 36px;
@@ -285,7 +466,11 @@ header .nav .login-btn a i:hover {
     text-shadow: black 0px 3px 8px;
 }
 
+<<<<<<< HEAD
 .games .card-box {
+=======
+.games .card-box{
+>>>>>>> master
     width: 100%;
     min-height: 100%;
     display: flex;
@@ -293,7 +478,11 @@ header .nav .login-btn a i:hover {
     align-items: center;
 }
 
+<<<<<<< HEAD
 .games .card-box .card {
+=======
+.games .card-box .card{
+>>>>>>> master
     width: 280px;
     border-radius: 10px;
     margin: 20px 40px;
@@ -302,28 +491,48 @@ header .nav .login-btn a i:hover {
     box-shadow: black 0px 3px 8px;
 }
 
+<<<<<<< HEAD
 .games .card-box .card img {
+=======
+.games .card-box .card img{
+>>>>>>> master
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
 
+<<<<<<< HEAD
 .games .card-box .card .content {
     padding: 10px;
 }
 
 .games .card-box .card .content h4 {
+=======
+.games .card-box .card .content{
+    padding: 10px;
+}
+
+.games .card-box .card .content h4{
+>>>>>>> master
     color: white;
     margin: 5px auto;
 }
 
+<<<<<<< HEAD
 .games .card-box .card .content .info {
+=======
+.games .card-box .card .content .info{
+>>>>>>> master
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+<<<<<<< HEAD
 .games .card-box .card .content .info a {
+=======
+.games .card-box .card .content .info a{
+>>>>>>> master
     display: inline-block;
     padding: 10px 20px;
     margin: 20px 0;
@@ -338,11 +547,19 @@ header .nav .login-btn a i:hover {
     box-shadow: 0px 0px 20px 5px #EAA221;
 }
 
+<<<<<<< HEAD
 .games .card-box .card .content .info a:hover {
     box-shadow: 0px 0px 20px 5px rgb(248, 244, 0);
 }
 
 .contact-bg {
+=======
+.games .card-box .card .content .info a:hover{
+    box-shadow: 0px 0px 20px 5px rgb(248, 244, 0);
+}
+
+.contact-bg{
+>>>>>>> master
     padding: 20px 100px;
     width: 100%;
     min-height: 50vh;
@@ -351,18 +568,29 @@ header .nav .login-btn a i:hover {
     align-items: center;
 }
 
+<<<<<<< HEAD
 .contact-bg img {
     height: 100%;
     width: 31%;
+=======
+.contact-bg img{
+    height: 100%;
+    width: 50%;
+>>>>>>> master
     object-fit: cover;
     border-radius: 10px;
 }
 
+<<<<<<< HEAD
 .contact-bg .form {
+=======
+.contact-bg .form{
+>>>>>>> master
     width: 50%;
     margin: 30px;
 }
 
+<<<<<<< HEAD
 .contact-bg .form h1 {
     color: white;
 }
@@ -372,11 +600,26 @@ header .nav .login-btn a i:hover {
 }
 
 .contact-bg .form .input-box p {
+=======
+.contact-bg .form h1{
+    color: white;
+}
+
+.contact-bg .form .input-box{
+    margin: 10px 0;
+}
+
+.contact-bg .form .input-box p{
+>>>>>>> master
     color: white;
 }
 
 .contact-bg .form .input-box input,
+<<<<<<< HEAD
 .contact-bg .form .input-box textarea {
+=======
+.contact-bg .form .input-box textarea{
+>>>>>>> master
     border: none;
     outline: none;
     padding: 10px;
@@ -387,11 +630,19 @@ header .nav .login-btn a i:hover {
     font-size: 1.1em;
 }
 
+<<<<<<< HEAD
 .contact-bg .form .input-box textarea {
     height: 150px;
 }
 
 .contact-bg .form .input-box input[type="submit"] {
+=======
+.contact-bg .form .input-box textarea{
+    height: 150px;
+}
+
+.contact-bg .form .input-box input[type="submit"]{
+>>>>>>> master
     display: inline-block;
     padding: 10px 20px;
     margin: 20px 0;
@@ -407,22 +658,38 @@ header .nav .login-btn a i:hover {
     letter-spacing: 1px;
 }
 
+<<<<<<< HEAD
 .contact-bg .form .input-box input[type="submit"]:hover {
     box-shadow: 0px 0px 20px 5px rgb(248, 244, 0);
 }
 
 footer {
+=======
+.contact-bg .form .input-box input[type="submit"]:hover{
+    box-shadow: 0px 0px 20px 5px rgb(248, 244, 0);
+}
+
+footer{
+>>>>>>> master
     padding: 10px 100px;
 
 }
 
+<<<<<<< HEAD
 footer .info {
+=======
+footer .info{
+>>>>>>> master
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+<<<<<<< HEAD
 footer .info .logo {
+=======
+footer .info .logo{
+>>>>>>> master
     position: relative;
     color: white;
     text-decoration: none;
@@ -430,19 +697,31 @@ footer .info .logo {
     font-weight: 700;
 }
 
+<<<<<<< HEAD
 footer .info p {
+=======
+footer .info p{
+>>>>>>> master
     color: gray;
 
 }
 
+<<<<<<< HEAD
 footer .info ul {
+=======
+footer .info ul{
+>>>>>>> master
     margin: 10px 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+<<<<<<< HEAD
 footer .info ul li {
+=======
+footer .info ul li{
+>>>>>>> master
     list-style: none;
     height: 50px;
     width: 50px;
@@ -454,7 +733,11 @@ footer .info ul li {
     border: 1px solid #EAA221;
 }
 
+<<<<<<< HEAD
 footer .info ul li:hover {
+=======
+footer .info ul li:hover{
+>>>>>>> master
     background: #EAA221;
     transition: all 0.3s ease;
     box-shadow: 0px 0px 20px 5px #EAA221;
@@ -463,8 +746,13 @@ footer .info ul li:hover {
 /* inicio de sesión/registro */
 
 /* fondo negro */
+<<<<<<< HEAD
 .overlay {
     background: rgba(0, 0, 0, 0.7);
+=======
+.overlay{
+    background: rgba(0,0,0,0.7);
+>>>>>>> master
     position: fixed;
     top: 0;
     bottom: 0;
@@ -477,11 +765,16 @@ footer .info ul li:hover {
     visibility: hidden;
 }
 
+<<<<<<< HEAD
 .overlay.active {
+=======
+.overlay.active{
+>>>>>>> master
     visibility: visible;
 }
 
 /* ventana emergente */
+<<<<<<< HEAD
 .popup {
     background: white;
     box-shadow: black 0px 3px 8px;
@@ -495,11 +788,25 @@ footer .info ul li:hover {
 }
 
 .popup .btn-cerrar-popup {
+=======
+.popup{
+    background: white;
+    box-shadow: black 0px 3px 8px;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+
+}
+
+.popup .btn-close{
+>>>>>>> master
     font-size: 20px;
     line-height: 20px;
     display: block;
     text-align: right;
     transition: 0.3s ease all;
+<<<<<<< HEAD
     color: #EAA221;
     position: relative;
     z-index: 1000;
@@ -769,3 +1076,15 @@ footer .info ul li:hover {
     font-size: 25px;
 }
 
+=======
+
+}
+
+.popup .btn-close:hover{
+    color: red;
+}
+
+.popup form .container-inputs{
+
+}
+>>>>>>> master
