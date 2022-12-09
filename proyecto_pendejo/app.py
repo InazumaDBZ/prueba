@@ -10,13 +10,86 @@ def index():
 def accion():
     return render_template("accion.html")
 
+@app.route("/casuales")
+def casuales():
+    return render_template("casuales.html")
+
+@app.route("/terror")
+def terror():
+    return render_template("terror.html")
+
+@app.route("/aventura")
+def aventura():
+    return render_template("aventura.html")
+
 @app.route("/dbz")
 def dbz():
     return render_template("juegos.html")
 
-@app.route("/casuales")
-def casuales():
-    return render_template("casuales.html")
+#Inicio De Juegos De Accion
+
+@app.route("/accion/spiderdoll")
+def spiderdoll():
+    return render_template("accion/spiderdoll.html")
+
+
+@app.route("/accion/sandbox-city")
+def sandbox_city():
+    return render_template("accion/sandbox-city---cars-zombies-ragdolls.html")
+
+@app.route("/accion/amazing-vice-spider")
+def amazing_vice_spider():
+    return render_template("accion/amazing-strange-rope-police.html")
+
+@app.route("/accion/armed-with-wings-2")
+def armed_wings2():
+    return render_template("accion/armed-with-wings2.html")
+
+@app.route("/accion/infeccion-z")
+def infectionZ():
+    return render_template("accion/infectionZ.html")
+
+@app.route("/accion/time-shooter2")
+def time_shooter2():
+    return render_template("accion/time-shooter2.html")
+
+@app.route("/accion/fields-of-fury")
+def fields_fury():
+    return render_template("accion/fields-of-fury.html")
+
+@app.route("/accion/air-wars3")
+def air_wars():
+    return render_template("accion/air-wars3.html")
+
+@app.route("/accion/hobo")
+def hobo():
+    return render_template("accion/hobo.html")
+
+@app.route("/accion/ghost-walker")
+def ghost_walker():
+    return render_template("accion/ghost-walker.html")
+
+@app.route("/accion/hero-battle---fantasy-arena")
+def hero_battle():
+    return render_template("accion/hero-battle-FA.html")
+
+@app.route("/accion/smash-karts")
+def smash_kart():
+    return render_template("accion/smash-karts.html")
+
+@app.route("/accion/dead-shot")
+def dead_shot():
+    return render_template("accion/dead-shot.html")
+
+@app.route("/accion/shotgun-highway")
+def shotgun_highway():
+    return render_template("accion/shotgun-highway.html")
+
+@app.route("/accion/bullet-force")
+def bullet_force():
+    return render_template("accion/bullet-force.html")
+
+#fin de juegos de accion
 
 @app.route("/casuales/getting-over-it")
 def gettingOver():
@@ -84,10 +157,6 @@ def lampadaStreet():
 
 #terror-----------------------------------
 
-@app.route("/terror")
-def terror():
-    return render_template("terror.html")
-
 @app.route("/terror/kuzbass-horror")
 def kuzbass_horror():
     return render_template("/terror/kuzbass-horror.html")
@@ -148,6 +217,7 @@ def slenderman_must_die_silent_streets():
 def slenderman_must_die_sanatorium_2021():
     return render_template("/terror/slenderman-must-die-sanatorium-2021.html")
 
+#<<<<<<< HEAD
 #nuestros juegos-------------------------
 
 @app.route("/tic-tac-toe")
@@ -157,3 +227,70 @@ def XO():
 @app.route("/dinosaurio")
 def dinosaurio():
     return render_template("/nuestros juegos/dinosaurio.html")
+#=======
+#inicio de juegos de aventura
+
+@app.route("/aventura/bloxd.io")
+def blox_io():
+    return render_template("/aventura/bloxdio.html")
+
+@app.route("/aventura/haven-dock")
+def haven_dock():
+    return render_template("/aventura/haven-dock.html")
+
+@app.route("/aventura/a-tower-in-the-forest")
+def tower_forest():
+    return render_template("/aventura/a-tower-in-the-forest.html")
+
+@app.route("/aventura/coma")
+def coma():
+    return render_template("/aventura/coma.html")
+
+@app.route("/aventura/glitcheon")
+def glitcheon():
+    return render_template("/aventura/glitcheon.html")
+
+@app.route("/aventura/is-today-another-day")
+def today_another_day():
+    return render_template("/aventura/is-today-another-day.html")
+
+@app.route("/aventura/heraclos")
+def heraclos():
+    return render_template("/aventura/heraclos.html")
+
+@app.route("/aventura/wayward")
+def wayward():
+    return render_template("/aventura/wayward.html")
+
+@app.route("/aventura/steve-s-world")
+def steve_s_world():
+    return render_template("/aventura/steve-s-world.html")
+
+@app.route("/aventura/prince-of-persia")
+def prince_of_persia():
+    return render_template("/aventura/prince-of-persia.html")
+
+@app.route("/aventura/spooky-island")
+def spooky_island():
+    return render_template("/aventura/spooky-island.html")
+
+@app.route("/aventura/revenot-roguelike-action-rpg")
+def revenot():
+    return render_template("/aventura/revenot-roguelike-action-rpg.html")
+
+@app.route("/aventura/kity-builder")
+def kity_builder():
+    return render_template("/aventura/kity-builder.html")
+
+@app.route("/aventura/fantasmicidio")
+def fantasmicidio():
+    return render_template("/aventura/fantasmicidio.html")
+
+@app.route("/aventura/cat-mario")
+def cat_mario():
+    return render_template("/aventura/cat-mario.html")
+
+@app.route("/aventura/midnight-remastered")
+def midnight_remastered():
+    return render_template("/aventura/midnight-remastered.html")
+
