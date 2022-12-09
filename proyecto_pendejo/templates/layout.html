@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+    <link rel="stylesheet" href="proyecto_pendejo/static/script.js">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oxanium:wght@800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <a href="." class="logo">Unsirifa<span>Games</span></a>
+        <ul class="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/accion">Acción</a></li>
+            <li><a href="/casuales">Casuales</a></li>
+            <li><a href="/terror">Terror</a></li>
+            <li><a href="/aventura">Aventura</a></li>
+        </ul>
+
+        <div class="action">
+            <div class="searchBx">
+                <a href="#">
+                    <i class="bx bx-search"></i>
+                </a>
+                <input type="text" placeholder="Buscar juegos...">
+            </div>
+        </div>
+
+        <a href="#" class="btn-open" id="btn-open"><i class='bx bxs-user-circle'></i></a>
+
+        <div class="toggle" onclick="toggleMenu();"></div>
+    </header>
+
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="#" id="btn-close" class="btn-close"><i class='bx bx-x'></i></a>
+            <h3>SUSCRIBETE</h3>
+            <h4>y recibe un cupon de descuento.</h4>
+            <form action="">
+                <div class="contenedor-inputs">
+                    <input type="text" placeholder="Nombre">
+                    <input type="email" placeholder="Correo">
+                </div>
+                <input type="submit" class="btn-submit" value="Suscribirse">
+            </form>
+        </div>
+    </div>
+</div>
+    {% block main %}{% endblock %}
+    <footer>
+        <div class="info">
+            <a href="#" class="logo">UnsirifaGames</a>
+            <p> <i class='bx bx-copyright'></i> 2022 All rights reserved</p>
+            <ul>
+                <li><a href="#"><i class='bx bxl-facebook' style="color: white;"></i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter' style="color: white;"></i></a></li>
+                <li><a href="#"><i class='bx bxl-instagram' style="color: white;"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</html>
