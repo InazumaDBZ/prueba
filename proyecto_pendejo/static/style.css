@@ -1,7 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 * {
 =======
 *{
+>>>>>>> master
+=======
+* {
 >>>>>>> master
     margin: 0;
     padding: 0;
@@ -10,18 +14,26 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 body {
 =======
 body{
+>>>>>>> master
+=======
+body {
 >>>>>>> master
     background: #1d191f;
 }
 
 /* navbar */
 <<<<<<< HEAD
+<<<<<<< HEAD
 header {
 =======
 header{
+>>>>>>> master
+=======
+header {
 >>>>>>> master
     position: fixed;
     top: 0;
@@ -35,6 +47,7 @@ header{
     transition: 0.5s;
     z-index: 3;
 <<<<<<< HEAD
+<<<<<<< HEAD
     box-shadow: 0 0 10px black;
 }
 
@@ -43,6 +56,12 @@ header .logo {
 }
 
 header .logo{
+>>>>>>> master
+=======
+    box-shadow: 0 0 10px black;
+}
+
+header .logo {
 >>>>>>> master
     position: relative;
     color: #fff;
@@ -54,9 +73,13 @@ header .logo{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 header .nav {
 =======
 header .nav{
+>>>>>>> master
+=======
+header .nav {
 >>>>>>> master
     display: flex;
     justify-content: center;
@@ -64,18 +87,26 @@ header .nav{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 header ul li {
 =======
 header ul li{
+>>>>>>> master
+=======
+header ul li {
 >>>>>>> master
     list-style: none;
     margin: 10px;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 header ul li a {
 =======
 header ul li a{
+>>>>>>> master
+=======
+header ul li a {
 >>>>>>> master
     color: #fff;
     text-decoration: none;
@@ -85,6 +116,7 @@ header ul li a{
     font-size: 14px;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 header .logo span {
     color: hsl(42, 99%, 46%);
@@ -98,11 +130,19 @@ header .logo span{
 
 header ul li a:hover{
 >>>>>>> master
+=======
+header .logo span {
+    color: hsl(42, 99%, 46%);
+}
+
+header ul li a:hover:not(header .nav li .login-btn a) {
+>>>>>>> master
     background: hsla(42, 99%, 46%, 0.75);
     color: #242533;
     box-shadow: 0 0 10px hsla(42, 99%, 46%, 0.75);
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 header .action .searchBx {
     padding: 5px;
@@ -131,12 +171,18 @@ header .action .searchBx{
     padding: 5px;
     margin: 5px;
 >>>>>>> master
+=======
+header .action .searchBx {
+    padding: 5px;
+    margin: 0 10px;
+>>>>>>> master
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     border-radius: 5px;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 header .nav .login-btn a {
     text-decoration: none;
@@ -146,29 +192,38 @@ header .nav .login-btn a i {
     font-size: 1.8em;
 =======
 header .action .searchBx a i{
+=======
+header .action .searchBx a {
+>>>>>>> master
     font-size: 1.4em;
-    margin: 5px;
     color: #EAA221;
 }
 
-header .action .searchBx input{
+header .action .searchBx input {
     outline: none;
     border: none;
     font-size: 1em;
     color: black;
 }
 
-header .login .login-btn{
-    padding: 5px;
-    margin: 5px;
+header .nav .login-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
 }
 
+<<<<<<< HEAD
 header .login .login-btn a i{
     font-size: 1.9em;
+>>>>>>> master
+=======
+header .nav .login-btn a {
+    text-decoration: none;
+}
+
+header .nav .login-btn a i {
+    font-size: 1.8em;
 >>>>>>> master
     margin: 5px;
     color: #EAA221;
@@ -176,9 +231,13 @@ header .login .login-btn a i{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 header .nav .login-btn a i:hover {
 =======
 header .login .login-btn a i:hover{
+>>>>>>> master
+=======
+header .nav .login-btn a i:hover {
 >>>>>>> master
     background: hsla(42, 99%, 46%, 0.75);
     color: #242533;
@@ -186,11 +245,16 @@ header .login .login-btn a i:hover{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/bg.png);
 =======
 .banner{
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/bg.png);
+>>>>>>> master
+=======
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/bg.png);
 >>>>>>> master
     background-position: center;
     background-size: cover;
@@ -204,9 +268,13 @@ header .login .login-btn a i:hover{
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .banner .bg {
 =======
 .banner .bg{
+>>>>>>> master
+=======
+.banner .bg {
 >>>>>>> master
     position: relative;
     width: 100%;
@@ -217,18 +285,26 @@ header .login .login-btn a i:hover{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .banner .bg .content {
 =======
 .banner .bg .content{
+>>>>>>> master
+=======
+.banner .bg .content {
 >>>>>>> master
     width: 50%;
     height: 100%
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .banner .bg .content h2 {
 =======
 .banner .bg .content h2{
+>>>>>>> master
+=======
+.banner .bg .content h2 {
 >>>>>>> master
     font-size: 4em;
     color: #fff;
@@ -239,6 +315,7 @@ header .login .login-btn a i:hover{
 }
 
 @keyframes text {
+<<<<<<< HEAD
 <<<<<<< HEAD
     50% {
         text-shadow: 10px 20px 30px #EAA221;
@@ -254,14 +331,27 @@ header .login .login-btn a i:hover{
 .banner .bg .content p{
     font-size: 1em;
 >>>>>>> master
+=======
+    50% {
+        text-shadow: 10px 20px 30px #EAA221;
+    }
+}
+
+.banner .bg .content p {
+    font-size: 1.3em;
+>>>>>>> master
     color: #dbd9d9;
     letter-spacing: 1px;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .banner .bg .content a {
 =======
 .banner .bg .content a{
+>>>>>>> master
+=======
+.banner .bg .content a {
 >>>>>>> master
     display: inline-block;
     padding: 10px 20px;
@@ -277,6 +367,7 @@ header .login .login-btn a i:hover{
     box-shadow: 0px 0px 20px 5px #EAA221;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .banner .bg .content a:hover {
     box-shadow: 0px 0px 20px 5px rgb(248, 244, 0);
@@ -293,23 +384,31 @@ header .login .login-btn a i:hover{
     min-height: 80vh;
 =======
 .banner .bg .content a:hover{
+=======
+.banner .bg .content a:hover {
+>>>>>>> master
     box-shadow: 0px 0px 20px 5px rgb(248, 244, 0);
 }
 
-.banner .bg img{
-    width: 600px;
+.banner .bg img {
+    width: 45%;
 
 }
 
-.about{
+.about {
     position: relative;
     width: 100%;
+<<<<<<< HEAD
     min-height: 75hv;
+>>>>>>> master
+=======
+    min-height: 80vh;
 >>>>>>> master
     padding: 0px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
 <<<<<<< HEAD
     background: #242533;
     box-shadow: 0 0 10px black;
@@ -321,16 +420,28 @@ header .login .login-btn a i:hover{
 
 .about .container-info{
 >>>>>>> master
+=======
+    background: #242533;
+    box-shadow: 0 0 10px black;
+}
+
+.about .container-info {
+>>>>>>> master
     width: 50%;
     margin: 20px;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .about .container-info h2 {
     font-size: 4em;
 =======
 .about .container-info h2{
     font-size: 3em;
+>>>>>>> master
+=======
+.about .container-info h2 {
+    font-size: 4em;
 >>>>>>> master
     font-weight: 700;
     color: white;
@@ -339,6 +450,9 @@ header .login .login-btn a i:hover{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
 .about img{
     top: 20px;
     left: 20px;
@@ -348,14 +462,18 @@ header .login .login-btn a i:hover{
 .about .container-info p {
     max-width: 800px;
     font-size: 1.3em;
+<<<<<<< HEAD
 =======
 .about .container-info p{
     max-width: 600px;
+>>>>>>> master
+=======
 >>>>>>> master
     text-align: justify;
     color: white;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .about .container-info h2 span {
     color: hsl(42, 99%, 46%);
@@ -368,19 +486,27 @@ header .login .login-btn a i:hover{
 ::-webkit-scrollbar-thumb {
 =======
 .about .container-info h2 span{
+=======
+.about .container-info h2 span {
+>>>>>>> master
     color: hsl(42, 99%, 46%);
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 12px;
 }
 
+<<<<<<< HEAD
 ::-webkit-scrollbar-thumb{
+>>>>>>> master
+=======
+::-webkit-scrollbar-thumb {
 >>>>>>> master
     background: #EAA221;
     border-radius: 6px;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .container-cards {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/accion-bg.png);
@@ -388,11 +514,16 @@ header .login .login-btn a i:hover{
 .container-cards{
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/accion-bg.png);
 >>>>>>> master
+=======
+.container-cards {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/accion-bg.png);
+>>>>>>> master
     background-position: center;
     background-size: cover;
     position: relative;
     z-index: 2;
     width: 100%;
+<<<<<<< HEAD
 <<<<<<< HEAD
     min-height: 120vh;
     padding: 0px 100px;
@@ -402,10 +533,18 @@ header .login .login-btn a i:hover{
 .container-cards {
 =======
     min-height: 100vh;
+=======
+    min-height: 120vh;
+>>>>>>> master
     padding: 0px 100px;
+    box-shadow: 0 0 10px black;
 }
 
+<<<<<<< HEAD
 .container-cards{
+>>>>>>> master
+=======
+.container-cards {
 >>>>>>> master
     display: flex;
     justify-content: center;
@@ -414,6 +553,7 @@ header .login .login-btn a i:hover{
     padding: 170px;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .container-cards td {
     padding: 0px 15px 35px;
@@ -427,16 +567,28 @@ header .login .login-btn a i:hover{
 
 .container-cards img{
 >>>>>>> master
+=======
+.container-cards td {
+    padding: 0px 15px 35px;
+}
+
+.container-cards img {
+>>>>>>> master
     width: 155px;
     height: 160px;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .games {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/card-bg.png);
 =======
 .games{
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/card-bg.png);
+>>>>>>> master
+=======
+.games {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/card-bg.png);
 >>>>>>> master
     background-position: center;
     background-size: cover;
@@ -450,6 +602,7 @@ header .login .login-btn a i:hover{
     align-items: center;
     flex-direction: column;
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 
 .games h2 {
@@ -459,6 +612,11 @@ header .login .login-btn a i:hover{
 
 .games h2{
 >>>>>>> master
+=======
+}
+
+.games h2 {
+>>>>>>> master
     color: white;
     margin: 10px 0;
     font-size: 36px;
@@ -467,9 +625,13 @@ header .login .login-btn a i:hover{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .games .card-box {
 =======
 .games .card-box{
+>>>>>>> master
+=======
+.games .card-box {
 >>>>>>> master
     width: 100%;
     min-height: 100%;
@@ -479,9 +641,13 @@ header .login .login-btn a i:hover{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .games .card-box .card {
 =======
 .games .card-box .card{
+>>>>>>> master
+=======
+.games .card-box .card {
 >>>>>>> master
     width: 280px;
     border-radius: 10px;
@@ -492,15 +658,20 @@ header .login .login-btn a i:hover{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .games .card-box .card img {
 =======
 .games .card-box .card img{
+>>>>>>> master
+=======
+.games .card-box .card img {
 >>>>>>> master
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .games .card-box .card .content {
     padding: 10px;
@@ -514,14 +685,25 @@ header .login .login-btn a i:hover{
 
 .games .card-box .card .content h4{
 >>>>>>> master
+=======
+.games .card-box .card .content {
+    padding: 10px;
+}
+
+.games .card-box .card .content h4 {
+>>>>>>> master
     color: white;
     margin: 5px auto;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .games .card-box .card .content .info {
 =======
 .games .card-box .card .content .info{
+>>>>>>> master
+=======
+.games .card-box .card .content .info {
 >>>>>>> master
     display: flex;
     justify-content: space-between;
@@ -529,9 +711,13 @@ header .login .login-btn a i:hover{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .games .card-box .card .content .info a {
 =======
 .games .card-box .card .content .info a{
+>>>>>>> master
+=======
+.games .card-box .card .content .info a {
 >>>>>>> master
     display: inline-block;
     padding: 10px 20px;
@@ -547,6 +733,7 @@ header .login .login-btn a i:hover{
     box-shadow: 0px 0px 20px 5px #EAA221;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .games .card-box .card .content .info a:hover {
     box-shadow: 0px 0px 20px 5px rgb(248, 244, 0);
@@ -560,6 +747,13 @@ header .login .login-btn a i:hover{
 
 .contact-bg{
 >>>>>>> master
+=======
+.games .card-box .card .content .info a:hover {
+    box-shadow: 0px 0px 20px 5px rgb(248, 244, 0);
+}
+
+.contact-bg {
+>>>>>>> master
     padding: 20px 100px;
     width: 100%;
     min-height: 50vh;
@@ -569,6 +763,7 @@ header .login .login-btn a i:hover{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .contact-bg img {
     height: 100%;
     width: 31%;
@@ -577,19 +772,29 @@ header .login .login-btn a i:hover{
     height: 100%;
     width: 50%;
 >>>>>>> master
+=======
+.contact-bg img {
+    height: 100%;
+    width: 31%;
+>>>>>>> master
     object-fit: cover;
     border-radius: 10px;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .contact-bg .form {
 =======
 .contact-bg .form{
+>>>>>>> master
+=======
+.contact-bg .form {
 >>>>>>> master
     width: 50%;
     margin: 30px;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .contact-bg .form h1 {
     color: white;
@@ -602,23 +807,34 @@ header .login .login-btn a i:hover{
 .contact-bg .form .input-box p {
 =======
 .contact-bg .form h1{
+=======
+.contact-bg .form h1 {
+>>>>>>> master
     color: white;
 }
 
-.contact-bg .form .input-box{
+.contact-bg .form .input-box {
     margin: 10px 0;
 }
 
+<<<<<<< HEAD
 .contact-bg .form .input-box p{
+>>>>>>> master
+=======
+.contact-bg .form .input-box p {
 >>>>>>> master
     color: white;
 }
 
 .contact-bg .form .input-box input,
 <<<<<<< HEAD
+<<<<<<< HEAD
 .contact-bg .form .input-box textarea {
 =======
 .contact-bg .form .input-box textarea{
+>>>>>>> master
+=======
+.contact-bg .form .input-box textarea {
 >>>>>>> master
     border: none;
     outline: none;
@@ -631,6 +847,7 @@ header .login .login-btn a i:hover{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .contact-bg .form .input-box textarea {
     height: 150px;
 }
@@ -642,6 +859,13 @@ header .login .login-btn a i:hover{
 }
 
 .contact-bg .form .input-box input[type="submit"]{
+>>>>>>> master
+=======
+.contact-bg .form .input-box textarea {
+    height: 150px;
+}
+
+.contact-bg .form .input-box input[type="submit"] {
 >>>>>>> master
     display: inline-block;
     padding: 10px 20px;
@@ -659,6 +883,7 @@ header .login .login-btn a i:hover{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .contact-bg .form .input-box input[type="submit"]:hover {
     box-shadow: 0px 0px 20px 5px rgb(248, 244, 0);
 }
@@ -671,14 +896,25 @@ footer {
 
 footer{
 >>>>>>> master
+=======
+.contact-bg .form .input-box input[type="submit"]:hover {
+    box-shadow: 0px 0px 20px 5px rgb(248, 244, 0);
+}
+
+footer {
+>>>>>>> master
     padding: 10px 100px;
 
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 footer .info {
 =======
 footer .info{
+>>>>>>> master
+=======
+footer .info {
 >>>>>>> master
     display: flex;
     justify-content: space-between;
@@ -686,9 +922,13 @@ footer .info{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 footer .info .logo {
 =======
 footer .info .logo{
+>>>>>>> master
+=======
+footer .info .logo {
 >>>>>>> master
     position: relative;
     color: white;
@@ -698,18 +938,26 @@ footer .info .logo{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 footer .info p {
 =======
 footer .info p{
+>>>>>>> master
+=======
+footer .info p {
 >>>>>>> master
     color: gray;
 
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 footer .info ul {
 =======
 footer .info ul{
+>>>>>>> master
+=======
+footer .info ul {
 >>>>>>> master
     margin: 10px 0;
     display: flex;
@@ -718,9 +966,13 @@ footer .info ul{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 footer .info ul li {
 =======
 footer .info ul li{
+>>>>>>> master
+=======
+footer .info ul li {
 >>>>>>> master
     list-style: none;
     height: 50px;
@@ -734,9 +986,13 @@ footer .info ul li{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 footer .info ul li:hover {
 =======
 footer .info ul li:hover{
+>>>>>>> master
+=======
+footer .info ul li:hover {
 >>>>>>> master
     background: #EAA221;
     transition: all 0.3s ease;
@@ -747,11 +1003,16 @@ footer .info ul li:hover{
 
 /* fondo negro */
 <<<<<<< HEAD
+<<<<<<< HEAD
 .overlay {
     background: rgba(0, 0, 0, 0.7);
 =======
 .overlay{
     background: rgba(0,0,0,0.7);
+>>>>>>> master
+=======
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
 >>>>>>> master
     position: fixed;
     top: 0;
@@ -766,14 +1027,19 @@ footer .info ul li:hover{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .overlay.active {
 =======
 .overlay.active{
+>>>>>>> master
+=======
+.overlay.active {
 >>>>>>> master
     visibility: visible;
 }
 
 /* ventana emergente */
+<<<<<<< HEAD
 <<<<<<< HEAD
 .popup {
     background: white;
@@ -790,22 +1056,32 @@ footer .info ul li:hover{
 .popup .btn-cerrar-popup {
 =======
 .popup{
+=======
+.popup {
+>>>>>>> master
     background: white;
     box-shadow: black 0px 3px 8px;
     border-radius: 3px;
-    padding: 20px;
     text-align: center;
-    width: 600px;
-
+    max-width: 850px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0.7);
+    transition: 0.3s ease all;
 }
 
+<<<<<<< HEAD
 .popup .btn-close{
+>>>>>>> master
+=======
+.popup .btn-cerrar-popup {
 >>>>>>> master
     font-size: 20px;
     line-height: 20px;
     display: block;
     text-align: right;
     transition: 0.3s ease all;
+<<<<<<< HEAD
 <<<<<<< HEAD
     color: #EAA221;
     position: relative;
@@ -1078,13 +1354,279 @@ footer .info ul li:hover{
 
 =======
 
+=======
+    color: #EAA221;
+    position: relative;
+    z-index: 1000;
+>>>>>>> master
 }
 
-.popup .btn-close:hover{
+.popup .btn-cerrar-popup:hover {
     color: red;
 }
 
-.popup form .container-inputs{
+.popup.active{opacity: 1; transform: scale(1);}
 
+.container {
+    position: relative;
+    background: #fff;
+    padding: 40px 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    perspective: 2700px;
 }
+
+.container .cover {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    z-index: 98;
+    transition: all 1s ease;
+    transform-origin: left;
+    transform-style: preserve-3d;
+}
+
+.container #flip:checked~.cover {
+    transform: rotateY(-180deg);
+}
+
+.container .cover img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 10;
+}
+
+.container .form-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-content .login-form,
+.form-content .signup-form {
+    width: calc(100% / 2 - 25px);
+}
+
+.forms .form-content .title {
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+
+.forms .form-content .input-boxes {
+    margin-top: 30px;
+}
+
+.forms .form-content .input-box {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.form-content .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.form-content .input-box input:focus,
+.form-content .input-box input:valid {
+    border-color: #242533;
+}
+
+.form-content .input-box i {
+    position: absolute;
+    color: #242533;
+    font-size: 17px;
+}
+
+.forms .form-content .text {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.forms .form-content .text a {
+    text-decoration: none;
+    color: #242533;
+}
+
+.forms .form-content .text a:hover {
+    text-decoration: underline;
+}
+
+.forms .form-content .button {
+    color: #fff;
+    margin-top: 40px;
+}
+
+.forms .form-content .button input {
+    color: #fff;
+    background: #1d191f;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.forms .form-content .button input:hover {
+    background: #242533;
+}
+
+.forms .form-content label {
+    color: #EAA221;
+    cursor: pointer;
+}
+
+.forms .form-content label:hover {
+    text-decoration: underline;
+}
+
+.forms .form-content .login-text,
+.forms .form-content .sign-up-text {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.container #flip {
+    display: none;
+}
+
+@media (max-width: 730px) {
+    .container .cover {
+        display: none;
+    }
+
+    .form-content .login-form,
+    .form-content .signup-form {
+        width: 100%;
+    }
+
+    .form-content .signup-form {
+        display: none;
+    }
+
+    .container #flip:checked~.forms .signup-form {
+        display: block;
+    }
+
+    .container #flip:checked~.forms .login-form {
+        display: none;
+    }
+}
+
+
+@media(max-width: 900px) {
+    header {
+        padding: 15px 40px;
+    }
+
+    header .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #242533;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    header .nav.active {
+        display: flex;
+    }
+
+    header .nav li {
+        margin: 20px 0;
+    }
+
+    header .nav li a {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    .toggleMenu {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(images/menu.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .toggleMenu.active {
+        background: url(images/close.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+    }
+}
+
+.sidebar-menu{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    height: 18%;
+    border-radius: 10px;
+    box-sizing: initial;
+    border-left: 5px solid #EAA221;
+    background: #1d191f;
+    width: 300px;
+    transition: 0.5s;
+    opacity: 0;
+    transform: scale(0.7);
+}
+
+.sidebar-menu.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.sidebar-menu ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 20px;
+}
+
+.sidebar-menu ul li{
+    position: relative;
+    width: 100%;
+}
+
+.toggle{
+    position: absolute;
+    top: 20px;
+    right: -5px;
+    width: 50px;
+    height: 70px;
+    color: #EAA221;
+    font-size: 25px;
+}
+
+<<<<<<< HEAD
+}
+>>>>>>> master
+=======
 >>>>>>> master
