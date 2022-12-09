@@ -147,3 +147,13 @@ def slenderman_must_die_silent_streets():
 @app.route("/terror/slenderman-must-die-sanatorium-2021")
 def slenderman_must_die_sanatorium_2021():
     return render_template("/terror/slenderman-must-die-sanatorium-2021.html")
+
+#nuestros juegos-------------------------
+
+@app.route("/tic-tac-toe")
+def XO():
+    return render_template("/nuestros juegos/XO.html")
+
+@app.route("/dinosaurio")
+def dinosaurio():
+    return render_template("/nuestros juegos/dinosaurio.html")
