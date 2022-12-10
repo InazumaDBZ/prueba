@@ -1,0 +1,194 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Oxanium:wght@800&display=swap"
+        rel="stylesheet">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>UnsirifaGames</title>
+</head>
+
+<body>
+    <header>
+        <a href="." class="logo">Unsirifa<span>Games</span></a>
+
+
+        <ul class="nav">
+            <li><a href="/accion">Acción</a></li>
+            <li><a href="#">Clásicos</a></li>
+            <li><a href="#">Mesa</a></li>
+            <li><a href="#">Aventura</a></li>
+            <li>
+                <div class="login-btn">
+                    <a href="#" class="btn-abrir-profile"><i class="bx bxs-user-circle"></i></a>
+                </div>
+            </li>
+        </ul>
+
+        <div class="action">
+            <div class="searchBx">
+                <a href="#">
+                    <i class="bx bx-search"></i>
+                </a>
+                <input type="text" placeholder="Buscar juegos...">
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="profile"><img src="static/images/photo.png">
+                <h3>{{username}}</h3>
+            </div>
+
+                <ul>
+                    <li><a href="#">
+                        <span class="icon"><i class='bx bxs-user'></i></span>
+                        <span class="item">Perfil</span>
+                    </a></li>
+                    <li><a href="#">
+                        <span class="icon"><i class='bx bxs-cog'></i></span>
+                        <span class="item">Ajustes</span>
+                    </a></li>
+                    <li><a href="/logout">
+                        <span class="icon"><i class='bx bx-log-out'></i></span>
+                        <span class="item">Cerrar sesión</span>
+                    </a></li>
+                </ul>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="content"></div>
+
+        <div class="toggleMenu" onclick="toggleMenu()"></div>
+    </header>
+
+    <div class="banner">
+        <div class="bg">
+            <div class="content">
+                <h2>¡Bienvenidos a UnsirifaGames!</h2>
+                <p>
+                    Disfruta de una colección de juegos súper divertidos
+                    para personas de todas las edades. ¡A jugar!
+                </p>
+                <a href="#" id="btn-open-popup" class="btn-open-popup">Únete ahora</a>
+            </div>
+            <img src="static/images/malan.png">
+        </div>
+    </div>
+    <div class="about">
+        <div class="container-info">
+            <h2>Acerca de <span>UnsiriGames</span></h2>
+            <p>¡Olvídate del aburrimiento con Minijuegos! La mayor selección de juegos gratis está aquí,
+                para que lleves la diversión al siguiente nivel. Juega online y sin preocupaciones:
+                puedes jugar a todos nuestros juegos sin descargar. ¡Pero cuidado!
+                Nuestros juegos de acción solo son aptos para los más atrevidos;
+                competirás con grandes pilotos en nuestros juegos de carreras;
+                podrás poner a prueba al estratega que llevas dentro en todos nuestros juegos de estrategia;
+                y sólo los auténticos exploradores llegarán a su meta en los juegos de aventura.
+                Y para los clásicos, las versiones clásicas y no tan clásicas de los clásicos juegos de mesa.
+                ¡Todos los juegos gratis y sin descargar!
+            </p>
+        </div>
+        <img src="static/images/unsiri.png">
+    </div>
+
+    <div class="games">
+        <h2>Juegos destacados</h2>
+        <div class="card-box">
+            <div class="card">
+                <img src="static/images/mc.png">
+                <div class="content">
+                    <h4>Minecraft</h4>
+                    <div class="info">
+                        <a href="#">Jugar ahora</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="static/images/mk.jpg">
+                <div class="content">
+                    <h4>Mortal Kombat 5</h4>
+                    <div class="info">
+                        <a href="#">Jugar ahora</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="static/images/ss.png">
+                <div class="content">
+                    <h4>Subway Surfers</h4>
+                    <div class="info">
+                        <a href="#">Jugar ahora</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="static/images/granny.png">
+                <div class="content">
+                    <h4>Granny</h4>
+                    <div class="info">
+                        <a href="#">Jugar ahora</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <div class="contact-bg">
+        <img src="static/images/contact.png">
+        <div class="form">
+            <form action="" method="post">
+                <h1>Contáctanos</h1>
+                <div class="input-box">
+                    <p>Ingrese su nombre</p>
+                    <input type="text" name="nombre" placeholder="Nombre completo" required>
+                </div>
+                <div class="input-box">
+                    <p>Ingrese su correo electrónico</p>
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                </div>
+                <div class="input-box">
+                    <p>Introduzca el asunto</p>
+                    <input type="text" name="asunto" placeholder="Asunto" required>
+                </div>
+                <div class="input-box">
+                    <p>Mensaje</p>
+                    <textarea rows="8" name="mensaje" placeholder="Escriba aquí..." required></textarea>
+                </div>
+                <div class="input-box">
+                    <input type="submit" name="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="info">
+            <a href="#" class="logo">UnsirifaGames</a>
+            <p> <i class='bx bx-copyright'></i> 2022 All rights reserved</p>
+            <ul>
+                <li><a href="#"><i class='bx bxl-facebook' style="color: white;"></i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter' style="color: white;"></i></a></li>
+                <li><a href="#"><i class='bx bxl-instagram' style="color: white;"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="static/script.js"></script>
+
+</html>
